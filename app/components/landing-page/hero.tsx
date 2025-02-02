@@ -12,6 +12,7 @@ export default function Hero() {
                     <span className="text-white text-xl">projectinbio.com</span>
                     <input type="text"/>
                     <button>Criar agora</button>
+
                 </div>
             </div>
             <div
