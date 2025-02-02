@@ -1,8 +1,8 @@
+import ProjectCard from "../commons/project-card";
+import TotalVisits from "../commons/total-visits";
 import UserCard from "../commons/user-card/user-card";
 import Button from "../ui/button";
 import TextInput from "../ui/text-input";
-import TotalVisits from "@/app/components/commons/total-visits";
-import ProjectCard from "@/app/components/commons/project-card";
 
 export default function Hero() {
     return (
@@ -28,13 +28,21 @@ export default function Hero() {
                 <div className="relative">
                     <UserCard/>
                     <div className="absolute -bottom-[7%] -right-[45%]">
-                        <TotalVisits/>
+                        <TotalVisits totalVisits={1342}/>
                     </div>
                     <div className="absolute top-[20%] -left-[45%] -z-10">
-                        <ProjectCard/>
+                        <ProjectCard
+                            name="Projeto 1"
+                            description="Descrição do projeto 1"
+                            img="project1.jpg"
+                        />
                     </div>
                     <div className="absolute -top-[5%] -left-[55%] -z-10">
-                        <ProjectCard/>
+                        <ProjectCard
+                            name="Projeto 2"
+                            description="Descrição do projeto 2"
+                            img="project2.jpg"
+                        />
                     </div>
                 </div>
             </div>
