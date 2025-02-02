@@ -5,9 +5,10 @@ import "server-only";
 
 // Certifcado
 const decodedKey = Buffer.from(
-    process.env.FIREBASE_PRIVATE_KEY!,
+    process.env.FIREBASE_PRIVATE_KEY_BASE64!,
     "base64"
 ).toString("utf-8");
+
 export const firebaseCert = cert({
     projectId: process.env.FIREBASE_PROJECT_ID,
     clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
